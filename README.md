@@ -47,7 +47,7 @@ print(about.json())
 
 # Play or loop a selected tone
 json = {"path": "chime.wav", "loop": True, "mcast": False}
-resp = client.request('POST', 'http://10.12.123.12/api/controls/tone/start', json=json)
+resp = client.request('POST', '/api/controls/tone/start', json=json)
 
 # Get current setting value
 current_setting = client.get_setting('mcast.zone13')
